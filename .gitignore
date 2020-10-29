@@ -1,0 +1,5 @@
+*.scss
+*.txt
+/scss/*
+*.less
+/less/*

@@ -1,6 +1,6 @@
 /* Ваши шрифты */
 @font-face {
-	font-family: 'Circe';
+	font-family: Circe;
 	src: url('./Circe-Regular.eot');
 	src: local('☺'), url('./Circe-Regular.woff') format('woff'), url('./Circe-Regular.ttf') format('truetype'), url('./Circe-Regular.svg') format('svg');
 	font-weight: normal;
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-	font-family: 'Plumb';
+	font-family: Plumb;
 	src: url('./plumb-medium.eot');
 	src: local('☺'), url('./plumb-medium.woff') format('woff'), url('./plumb-medium.ttf') format('truetype'), url('./plumb-medium.svg') format('svg');
 	font-weight: 500;
@@ -16,7 +16,7 @@
 }
 
 @font-face {
-	font-family: 'Plumb';
+	font-family: Plumb;
 	src: url('./plumb-bold.eot');
 	src: local('☺'), url('./plumb-bold.woff') format('woff'), url('./plumb-bold.ttf') format('truetype'), url('./plumb-bold.svg') format('svg');
 	font-weight: 700;

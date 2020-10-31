@@ -1,5 +1,222 @@
+@charset "UTF-8";
 .about-complex {
-  background: url("../img/bgc.svg") 0 0/auto auto no-repeat;
-  min-width: 100vw;
-  min-height: 100vh;
+  background: url("../img/bgc.svg") 50% 0/auto auto no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: unset;
+  align-content: unset;
+}
+.about-complex .content {
+  margin: 185px 0 0 0;
+  max-height: 615px;
+  display: flex;
+  flex-direction: row;
+  justify-content: unset;
+  align-items: unset;
+  align-content: unset;
+}
+.about-complex__texts {
+  width: 420px;
+  height: 224px;
+}
+.about-complex__header {
+  /* Style for "ЭКСПОФОРУМ" */
+  width: 420px;
+  height: 75px;
+  color: #ffffff;
+  font-family: Plumb;
+  font-size: 64px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 102.4px;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0 0 35px 0;
+}
+.about-complex__sub-header {
+  /* Style for "конгрессно" */
+  width: 533px;
+  height: 68px;
+  color: #ffffff;
+  font-family: Circe;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 33.6px;
+  text-align: left;
+  margin: 0 0 35px 0;
+}
+.about-complex__text {
+  /* Style for "Подробнее" */
+  width: 110px;
+  height: 20px;
+  color: #ffffff;
+  font-family: Circe;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 18.9px;
+  position: relative;
+  display: block;
+}
+.about-complex__arrow {
+  position: absolute;
+  width: 16px;
+  height: 1px;
+  top: 45%;
+  right: 0;
+  background: #FFFFFF;
+}
+.about-complex__arrow::before {
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  top: -2px;
+  right: -1px;
+  background: #ffffff;
+  content: "";
+  border-radius: 25px;
+  transform: rotate(45deg);
+}
+.about-complex__arrow::after {
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  bottom: -2px;
+  right: -1px;
+  background: #ffffff;
+  content: "";
+  border-radius: 25px;
+  transform: rotate(-45deg);
+}
+.about-complex__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: space-between;
+  align-content: unset;
+  flex-wrap: wrap;
+  max-width: 540px;
+  height: 355px;
+  margin: 115px 0 0 150px;
+  text-align: left;
+}
+.about-complex__buttons .about-complex__text {
+  /* Style for "Подробнее" */
+  /* Style for "Подробнее" */
+  width: 100px;
+  color: #ffffff;
+  font-family: Circe;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  margin: 15px 0 0 0;
+  display: block;
+  text-align: left;
+  position: relative;
+}
+.about-complex__buttons .about-complex__text:active .about-complex__buttons .about-complex__text:visited {
+  width: 100px;
+  display: inline-block;
+  color: #ffffff;
+  font-family: Circe;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  margin: 15px 0 0 0;
+  display: block;
+  position: relative;
+  text-align: left;
+}
+.about-complex__button-calendar {
+  /* Style for "Rectangle" */
+  width: 255px;
+  height: 148px;
+  background-color: #2378fc;
+  padding: 0 0 0 40px;
+}
+.about-complex__button-calendar .about-complex__sub-header {
+  /* Style for "Календарь" */
+  width: 127px;
+  height: 54px;
+  color: #ffffff;
+  font-family: Plumb;
+  font-size: 21px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -0.21px;
+  text-align: left;
+  line-height: 27.3px;
+  margin: 0 0 0 0;
+}
+.about-complex__button-road {
+  /* Style for "Rectangle" */
+  width: 255px;
+  height: 148px;
+  background-color: #30bcc9;
+  padding: 0 0 0 40px;
+}
+.about-complex__button-road .about-complex__sub-header {
+  /* Style for "Как добрат" */
+  width: 175px;
+  height: 54px;
+  color: #ffffff;
+  font-family: Plumb;
+  font-size: 21px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -0.21px;
+  line-height: 27.3px;
+  text-align: left;
+  margin: 0 0 0 0;
+}
+.about-complex__button-sign {
+  /* Style for "Rectangle" */
+  width: 255px;
+  height: 175px;
+  padding: 0 0 0 40px;
+  background-color: #ffc41e;
+}
+.about-complex__button-sign .about-complex__sub-header {
+  /* Style for "Онлайн-зая" */
+  width: 154px;
+  color: #ffffff;
+  font-family: Plumb;
+  font-size: 21px;
+  height: 81px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -0.21px;
+  line-height: 27.3px;
+  text-align: left;
+  margin: 0 0 0 0;
+}
+.about-complex__button-plan {
+  /* Style for "Rectangle" */
+  width: 255px;
+  height: 175px;
+  background-color: #f6404f;
+  padding: 0 0 0 40px;
+}
+.about-complex__button-plan .about-complex__sub-header {
+  /* Style for "План  и ин" */
+  width: 175px;
+  height: 81px;
+  color: #ffffff;
+  font-family: Plumb;
+  font-size: 21px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -0.21px;
+  line-height: 27.3px;
+  text-align: left;
+  margin: 0 0 0 0;
 }

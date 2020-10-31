@@ -100,21 +100,20 @@ body {
   align-items: center;
   align-content: unset;
   transition-duration: 0.1s;
-  overflow-x: hidden;
   height: 100%;
 }
 
 header {
-  width: 100vw;
+  min-width: 100vw;
 }
 
 main {
-  width: 100vw;
+  min-width: 100vw;
   flex: 1 0 auto;
 }
 
 footer {
-  width: 100vw;
+  min-width: 100vw;
   flex: 0 0 auto;
 }
 

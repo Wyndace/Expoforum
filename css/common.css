@@ -100,20 +100,21 @@ body {
   align-items: center;
   align-content: unset;
   transition-duration: 0.1s;
+  overflow-x: hidden;
   height: 100%;
 }
 
 header {
-  min-width: 100vw;
+  width: 100vw;
 }
 
 main {
-  min-width: 100vw;
+  width: 100vw;
   flex: 1 0 auto;
 }
 
 footer {
-  min-width: 100vw;
+  width: 100vw;
   flex: 0 0 auto;
 }
 
@@ -132,6 +133,7 @@ header {
   border-bottom: 1px solid #ffffff;
   position: fixed;
   top: 0;
+  z-index: 9999999;
 }
 header .content {
   min-width: 1560px;

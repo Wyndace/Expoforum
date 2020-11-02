@@ -1,26 +1,31 @@
 @charset "UTF-8";
 .about-complex {
-  background: url("../img/bgc.svg") 50% 0/auto auto no-repeat;
-  width: 100vw;
-  height: 100vh;
+  background: url("../img/bgc.svg") center/cover no-repeat fixed;
+  max-width: 100vw;
+  max-height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: unset;
+  align-items: center;
   align-content: unset;
 }
 .about-complex .content {
-  margin: 185px 0 0 0;
-  max-height: 615px;
-  display: flex;
-  flex-direction: row;
-  justify-content: unset;
-  align-items: unset;
-  align-content: unset;
+  margin: 90px 0 0 0;
+  max-height: 600px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "texts texts" "none buttons";
 }
 .about-complex__texts {
   width: 420px;
   height: 224px;
+  grid-area: texts;
+  align-self: end;
+  cursor: default;
 }
 .about-complex__header {
   /* Style for "ЭКСПОФОРУМ" */
@@ -96,18 +101,19 @@
   transform: rotate(-45deg);
 }
 .about-complex__buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: space-between;
-  align-content: unset;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 145px 175px;
+  grid-template-areas: "calendar road" "sign plan";
+  gap: 30px;
   max-width: 540px;
   height: 355px;
-  margin: 115px 0 0 150px;
   text-align: left;
+  grid-area: buttons;
+  justify-items: start;
 }
 .about-complex__buttons .about-complex__text {
+  cursor: pointer;
   /* Style for "Подробнее" */
   /* Style for "Подробнее" */
   width: 100px;
@@ -137,6 +143,8 @@
   text-align: left;
 }
 .about-complex__button-calendar {
+  cursor: default;
+  grid-area: calendar;
   /* Style for "Rectangle" */
   width: 255px;
   height: 148px;
@@ -158,6 +166,8 @@
   margin: 0 0 0 0;
 }
 .about-complex__button-road {
+  grid-area: road;
+  cursor: default;
   /* Style for "Rectangle" */
   width: 255px;
   height: 148px;
@@ -179,6 +189,8 @@
   margin: 0 0 0 0;
 }
 .about-complex__button-sign {
+  grid-area: sign;
+  cursor: default;
   /* Style for "Rectangle" */
   width: 255px;
   height: 175px;
@@ -200,6 +212,8 @@
   margin: 0 0 0 0;
 }
 .about-complex__button-plan {
+  grid-area: plan;
+  cursor: default;
   /* Style for "Rectangle" */
   width: 255px;
   height: 175px;
@@ -219,4 +233,51 @@
   line-height: 27.3px;
   text-align: left;
   margin: 0 0 0 0;
+}
+
+.about-company {
+  min-width: 100vw;
+  min-height: 426px;
+  background-color: #2378fc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: unset;
+}
+.about-company__title {
+  /* Style for "Организато" */
+  width: 210px;
+  height: 39px;
+  color: #ffffff;
+  font-family: Plumb;
+  font-size: 30px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -0.3px;
+  line-height: 39px;
+  text-align: left;
+}
+.about-company__texts {
+  margin: 30px 0 0 0;
+}
+.about-company__text {
+  /* Style for "Услуги орг" */
+  width: 170px;
+  color: #ffffff;
+  font-family: Circe;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 21.6px;
+  text-align: left;
+  margin: 0 0 15px 0;
+  display: block;
+}
+.about-company .content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  align-items: top;
 }

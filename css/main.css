@@ -264,9 +264,7 @@
   letter-spacing: -0.3px;
   line-height: 39px;
   text-align: left;
-}
-.about-company__texts {
-  margin: 30px 0 0 0;
+  margin: 0 0 30px 0;
 }
 .about-company__text {
   /* Style for "Услуги орг" */
@@ -287,6 +285,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   align-items: top;
+  margin: 75px 0;
 }
 
 .media-bank {
@@ -298,17 +297,9 @@
   justify-content: center;
   align-items: center;
   align-content: unset;
-  font-family: Circe;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 135%;
-  /* identical to box height, or 22px */
-  /* other / black */
-  color: #2E373B;
 }
 .media-bank .content {
-  margin: 75px 0 0 0;
+  margin: 75px 0 80px 0;
 }
 .media-bank__texts {
   display: flex;
@@ -394,4 +385,14 @@
   margin: 10px 0;
   /* Main / Red */
   color: #F6404F;
+}
+.media-bank__text {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 135%;
+  /* identical to box height, or 22px */
+  /* other / black */
+  color: #2E373B;
 }
